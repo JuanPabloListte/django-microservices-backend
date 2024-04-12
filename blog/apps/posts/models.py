@@ -9,6 +9,7 @@ def blog_directory_path(instance, filename):
 class Author(models.Model):
     id = models.UUIDField(primary_key=True)
     username = models.CharField(max_length=100)
+    email = models.EmailField()
     picture = models.ImageField(default='media/users/user_default_profile.png',  upload_to='media/users/pictures/', blank=True, null=True, verbose_name='Picture')
 
     
