@@ -22,8 +22,8 @@ class ContactCreateView(StandardAPIView):
             send_mail(
                 contact.subject,
                 message_body,
-                'mail@solopython.com',
-                ['mail@solopython.com'],
+                'juampilistte@gmail.com',
+                ['juampilistte@gmail.com'],
                 fail_silently=False
             )
             return self.send_response('Message sent successfully!')
